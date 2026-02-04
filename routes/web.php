@@ -1,8 +1,13 @@
 <?php
 
-use Illuminate\Support\Facades\Route;
+//use chripController
+use App\Http\Controllers\ChirpController;
 
-Route::get('/', function () {
-    //return view('welcome');
-    return view('home');
-});
+Route::get('/', [ChirpController::class, 'index']);
+
+// use Illuminate\Support\Facades\Route;
+
+// Route::get('/', function () {
+//     //return view('welcome');
+//     return view('home');
+// });
